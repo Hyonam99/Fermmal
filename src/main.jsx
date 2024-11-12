@@ -5,6 +5,9 @@ import './index.css'
 import App from './App.jsx'
 import Homepage from './pages/home/Homepage.jsx';
 import Aboutpage from './pages/about/Aboutpage.jsx';
+import HospitalPage from './pages/hospital/HospitalPage.jsx';
+import ProductsPage from './pages/products/ProductsPage.jsx';
+import Blogspage from './pages/blogs/Blogspage.jsx';
 
 const router = createBrowserRouter([
 	{
@@ -22,15 +25,15 @@ const router = createBrowserRouter([
 			},
 			{
 				path: "products",
-				element: <div>Products page</div>,
+				element: <ProductsPage />,
 			},
 			{
 				path: "hospital",
-				element: <div>Hospital page</div>,
+				element: <HospitalPage />,
 			},
 			{
 				path: "blogs",
-				element: <div>Blogs page</div>,
+				element: <Blogspage />,
 			},
 		],
 	},

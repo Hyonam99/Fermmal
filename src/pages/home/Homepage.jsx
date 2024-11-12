@@ -1,5 +1,6 @@
 
 import Herosection from "../../components/home/hero/Hero";
+import JoinFermmal from "../../components/home/join-fermmal/JoinFermmal";
 import Statistics from "../../components/home/statistics/Statistics";
 import WhyFermmal from "../../components/home/why-fermmal/WhyFermmal";
 import styles from "./homepage.module.css";
@@ -10,19 +11,19 @@ const Homepage = () => {
 			<Herosection />
 
 			{/* second section with value Proposition */}
-			<section className={styles.section_two}>
-				<div className={styles.value_proposition}>Value Proposition</div>
+			<div className={styles.section_two}>
+				<h2 className={styles.value_proposition}>Value Proposition</h2>
 				<img
 					className={styles.balance_icon}
 					src={"/icons/value-scale.svg"}
 					alt="balance"
 				/>
-				<h5 className={styles.section_two_subheading}>
+				<p className={styles.section_two_subheading}>
 					Empowering communities in the fight against malaria with free testing,
 					life-saving medications, and protective mosquito nets. Together, we
 					can create a healthier, malaria-free future.
-				</h5>
-			</section>
+				</p>
+			</div>
 
 			<WhyFermmal />
 
@@ -44,22 +45,7 @@ const Homepage = () => {
 				</video>
 			</section>
 
-      <section className={styles.join_fermmal}>
-        <div className={styles.content}>
-          <div className={styles.text_section}>
-            <h3>The malaria app for Nigerians</h3>
-            <p>Free testing, drugs, and mosquito nets to help combat malaria.</p>
-          </div>
-
-          <button type="button">Join Fermmal</button>
-        </div>
-
-        <div className={styles.image_section}>
-        <img src="/images/mobile-app.jpg" alt="fermmal mobile app" />
-
-        </div>
-
-			</section>
+			<JoinFermmal />
 		</div>
 	);
 }

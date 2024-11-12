@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./footer.module.css";
-import { companyLinks, socialLinks, supportLinks } from "../../data/footerlinks";
+import { companyLinks, socialLinks, supportLinks } from "../../data/links";
 
 const Footer = () => {
 	return (
@@ -42,6 +42,10 @@ const Footer = () => {
 						))}
 					</div>
 				</div>
+			</div>
+
+			<div className={style.copyright}>
+				<p>©Fermmal. All rigths reserved</p>
 			</div>
 		</footer>
 	);
